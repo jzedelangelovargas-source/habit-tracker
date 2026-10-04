@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 48px 16px;
+  background: linear-gradient(135deg, #e8f5ee, #eef2ff);
+  color: #20312b;
+  font-family: Arial, sans-serif;
+}
+
+.tracker {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 36px;
+  background: #fff;
+  border: 1px solid #e6eee9;
+  border-radius: 24px;
+  box-shadow: 0 20px 60px #234b3518;
+}
+
+h1 {
+  margin: 0 0 8px;
+  color: #176b4d;
+  font-size: 2rem;
+}
+
+#today {
+  display: inline-block;
+  margin: 0 0 12px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: #edf7f1;
+  color: #39765b;
+  font-size: 0.9rem;
+}
+
+label {
+  display: block;
+  margin: 20px 0 10px;
+  font-weight: bold;
+}
+
+.add-habit {
+  display: flex;
+  gap: 10px;
+}
+
+#habit-input {
+  flex: 1;
+  min-width: 0;
+  padding: 14px 16px;
+  border: 1px solid #d7e2db;
+  border-radius: 12px;
+  font-size: 1rem;
+}
+
+#habit-input:focus {
+  border-color: #31956d;
+  outline: 3px solid #31956d22;
+}
+
+button {
+  padding: 12px 18px;
+  border: 0;
+  border-radius: 12px;
+  background: #21845d;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+
+button:hover {
+  background: #176b4d;
+  transform: translateY(-1px);
+}
+
+#progress {
+  margin: 26px 0 14px;
+  color: #39765b;
+  font-weight: bold;
+}
+
+#habit-list {
+  display: grid;
+  gap: 12px;
+  padding: 0;
+  list-style: none;
+}
+
+.habit {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px;
+  border: 1px solid #e3ebe6;
+  border-radius: 14px;
+  background: #fcfdfc;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.habit:hover {
+  border-color: #b8d7c5;
+  box-shadow: 0 6px 18px #234b350d;
+}
+
+.habit input[type="checkbox"] {
+  flex: 0 0 auto;
+  width: 18px;
+  height: 18px;
+  accent-color: #21845d;
+  cursor: pointer;
+}
+
+.habit span {
+  flex: 1;
+  line-height: 1.4;
+}
+
+.delete-button {
+  padding: 9px 12px;
+  background: #fceaea;
+  color: #a43d3d;
+  font-size: 0.9rem;
+}
+
+.delete-button:hover {
+  background: #f5d6d6;
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 24px 12px;
+  }
+
+  .tracker {
+    padding: 24px 18px;
+  }
+
+  .add-habit {
+    flex-direction: column;
+  }
+}

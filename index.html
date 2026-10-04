@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fil">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#21845d">
+  <title>Habit Tracker</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="icon-192.png">
+
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="tracker">
+    <h1>Habit Tracker</h1>
+    <p id="today"></p>
+
+    <form id="habit-form">
+      <label for="habit-input">Anong habit ang gusto mong simulan?</label>
+      <div class="add-habit">
+        <input
+          id="habit-input"
+          type="text"
+          placeholder="Hal. Magbasa ng 10 minuto"
+          required
+        >
+        <button type="submit">Idagdag</button>
+      </div>
+    </form>
+
+    <p id="progress">0 sa 0 habits nagawa</p>
+    <ul id="habit-list"></ul>
+  </main>
+</body>
+</html>
